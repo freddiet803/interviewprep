@@ -24,7 +24,7 @@ body {
   color: #fff;
   background-color: rgba(61, 100, 158, 0.9);
 }
-.aside {
+.asides {
   flex: 0 0 40px;
   display: flex;
   flex-direction: column;
@@ -126,4 +126,47 @@ img {
 .sidebar {
   background-color: grey;
   border: 2px solid blue;
+}
+
+@media screen and (max-width: 600px) {
+  .asides {
+    display: none;
+  }
+  section {
+    width: 80%;
+  }
+  .music-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .music-head img {
+    height: 200px;
+    width: 200px;
+    margin-bottom: 10px;
+  }
+
+  .catty-music div:nth-child(1) p:first-child {
+    font-size: 1em;
+  }
+  .catty-music div p:nth-child(2) {
+    display: none;
+  }
+  .catty-music div p:nth-child(3) {
+    display: none;
+  }
+
+  .footer img {
+    display: none;
+  }
+  .music-list li {
+    display: flex;
+    justify-content: space-between;
+  }
+  .music-list li p:nth-child(2) {
+    display: none;
+  }
+  .music-list li p:nth-child(4) {
+    display: none;
+  }
 }
